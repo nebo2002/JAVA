@@ -28,6 +28,20 @@ class HelloWorld {
         }
         return total;
     }
+
+    public static int PrintOdd(int n)
+    {
+        int total=0;
+        
+        for (int i=1;i<=n;i++)
+        {
+            if (i%2!=0)
+            {
+                total+=i;
+            }
+        }
+        return total;
+    }
     
     public static void main(String[] args) 
     {
@@ -44,6 +58,9 @@ class HelloWorld {
         // System.out.print("The sum is "+calculate(a,b));
          System.out.print("The product is "+multiply(a,b));
          System.out.print("The factorial is "+factorial(a));
+        int n=scanner.nextInt();
+        
+        System.out.print("The sum of odd numbers is "+PrintOdd(n));
         
     }
 }
